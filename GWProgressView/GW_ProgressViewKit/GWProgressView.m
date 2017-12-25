@@ -106,7 +106,7 @@
 
 - (void)setBackImage:(NSString *)backImage{
     _backImage = backImage;
-    if ([backImage rangeOfString:@".gif"].location != NSNotFound) {
+    if ([self isConfile:backImage]) {
         self.firstView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:backImage ofType:nil]];
     }else{
         self.firstView.image = [UIImage imageNamed:backImage];
@@ -115,13 +115,18 @@
 
 - (void)setProgressImage:(NSString *)progressImage{
     _progressImage = progressImage;
-    if ([progressImage rangeOfString:@".gif"].location != NSNotFound) {
+    if ([self isConfile:progressImage]) {
         self.secondView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:progressImage ofType:nil]];
     }else{
         self.secondView.image = [UIImage imageNamed:progressImage];
     }
 }
 
-
+- (BOOL)isConfile:(NSString *)name{
+    if ([name hasSuffix:@".jpg"] || [name hasSuffix:@".png"] || [name hasSuffix:@".gif"]) {
+        return YES;
+    }
+    return NO;
+}
 
 @end
