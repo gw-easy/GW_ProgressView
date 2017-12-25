@@ -3,5 +3,4 @@
   * 支持颜色，普通图片，gif图片。
  
 ## 演示视图
-![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
-![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+![progressyanshi](https://raw.githubusercontent.com/gw-update-free/GW_ProgressView/master/GWProgressView/progressyanshi.gif")
