@@ -3,4 +3,4 @@
   * 支持颜色，普通图片，gif图片。
  
 ## 演示视图
-![progressyanshi](https://raw.githubusercontent.com/gw-update-free/GW_ProgressView/master/GWProgressView/progressyanshi.gif")
+![演示视图](https://raw.githubusercontent.com/gw-update-free/GW_ProgressView/master/GWProgressView/progressyanshi.gif)
